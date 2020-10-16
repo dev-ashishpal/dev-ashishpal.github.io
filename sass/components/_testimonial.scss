@@ -1,0 +1,112 @@
+.testimonial--container {
+
+  display: flex;
+  align-items: center;
+
+  &__box {
+    margin: 0 auto;
+    //background-color: orange;
+    background-color: #f9f9f9;
+    border-radius: 3px;
+    max-width: 65rem;
+    padding: 3rem 5rem;
+    color: #222;
+
+    @include respond(phone) {
+      //max-width: 50rem;
+      margin: 10px;
+      width: 100%;
+      padding: 1rem 1.5rem;
+    }
+
+    @include respond(mini) {
+      //max-width: 40rem;
+      width: 100%;
+      margin: 0 5px;
+      padding: 1rem 1.5rem;
+    }
+  }
+
+  &__para {
+    text-align: center;
+    font-size: 1.7rem;
+
+    font-weight: 400;
+    //background-color: white;
+  }
+
+  &__client {
+    //background-color: orangered;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 2rem;
+
+    &--img {
+      height: 6rem;
+      width: 6rem;
+
+
+      img {
+        height: 100%;
+        width: 100%;
+        border-radius: 100%;
+      }
+    }
+
+    &--about {
+      padding-left: 2rem;
+      p {
+        font-size: 1.8rem;
+      }
+
+      span {
+        color: #666;
+        transform: translateY(-1rem);
+      }
+    }
+  }
+}
+
+
+.testimonial--arrow {
+  font-size: 5rem;
+  color: var(--color-secondary);
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.testimonial--footer {
+  padding: 3rem 0;
+  display: flex;
+  justify-content: center;
+
+  &__line {
+    background-color: var(--color-text);
+    height: 7px;
+    width: 7px;
+    border-radius: 50%;
+
+    position: relative;
+
+    &::before,
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -8rem;
+      height: 2px;
+      width: 7rem;
+      background-color: var(--color-text);
+    }
+
+    &::before {
+      left: -8rem;
+    }
+
+    &::after {
+      left: 1.7rem;
+    }
+  }
+}

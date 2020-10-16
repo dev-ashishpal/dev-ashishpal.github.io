@@ -1,0 +1,76 @@
+.service--container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 50rem);
+  grid-template-rows: repeat(auto-fit, 1fr);
+  align-items: center;
+  justify-content: center;
+  grid-gap: 4rem;
+
+  @include respond(mini) {
+    grid-template-columns: repeat(auto-fit, 40rem);
+    grid-gap: 2rem;
+  }
+
+  &__box {
+    max-width: 50rem;
+    height: 30rem;
+    background-color: var(--color-text);
+    overflow: hidden;
+    border-radius: 3px;
+
+    position: relative;
+
+    @include respond(mini) {
+      max-width: 40rem;
+    }
+
+    &--content {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 10;
+      color: var(--color-primary);
+      padding: 3rem;
+    }
+  }
+
+  &__icon {
+    background-color: #fff;
+    border-radius: 3px;
+    margin: 1.8rem 3rem;
+    padding: 3px 1rem 0 1rem;
+    display: inline-block;
+
+    svg {
+      width: 25px;
+      height: 25px;
+      fill: var(--color-secondary);
+    }
+  }
+
+  &__heading {
+    font-size: 2rem;
+  }
+
+  &__text {
+    font-size: 1.6rem;
+  }
+}
+
+.circle-box1 {
+  position: absolute;
+  top: 3rem;
+  left: 3rem;
+  height: 7rem;
+  width: 7rem;
+  border-radius: 100%;
+  background-color: var(--color-secondary);
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.box1-svg {
+  position: absolute;
+  //top: 50%;
+  transform: translateX(15rem);
+}

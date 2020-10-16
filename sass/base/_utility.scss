@@ -1,0 +1,72 @@
+.mg-tp-sm {
+  margin-top: 2rem;
+}
+
+.mg-tp-md {
+  margin-top: 4rem;
+
+  @include respond(tab-port) {
+    margin-top: 3rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 2rem;
+  }
+}
+
+.mg-tp-lg {
+  margin-top: 6rem;
+
+  @include respond(tab-port) {
+    margin-top: 4rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 3rem;
+  }
+}
+
+.mg-tp-hg {
+  margin-top: 10rem;
+
+  @include respond(tab-port) {
+    margin-top: 8rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 6rem;
+  }
+}
+
+.mg-tp-section {
+  margin-top: 20rem;
+
+  @include respond(tab-port) {
+    margin-top: 15rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 10rem;
+  }
+}
+
+.mg-bt-sm {
+  margin-bottom: 2rem;
+}
+
+.mg-bt-md {
+  margin-bottom: 4rem;
+}
+
+.mg-bt-lg {
+  margin-bottom: 6rem;
+}
+
+.mg-bt-hg {
+  margin-bottom: 10rem;
+}
+
+
+.text-center {
+  text-align: center;
+}

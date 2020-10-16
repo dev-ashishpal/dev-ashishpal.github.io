@@ -1,0 +1,50 @@
+.footer {
+  margin-top: 20rem;
+  background-color: var(--color-secondary);
+
+  @include respond(tab-port) {
+    margin-top: 15rem;
+  }
+
+  @include respond(phone) {
+    margin-top: 8rem;
+  }
+
+  @include respond(mini) {
+    margin-top: 4rem;
+  }
+
+  &--list {
+    display: flex;
+    justify-content: center;
+    padding: 3rem 0;
+
+    &__item {
+      padding: .5rem 1rem;
+      border-radius: 4px;
+      background-color: var(--color-text);
+      list-style: none;
+
+      &:not(:last-child) {
+        margin-right: 4rem;
+      }
+    }
+
+    &__link {
+
+      svg {
+        width: 3rem;
+        height: 3rem;
+        fill: var(--color-primary);
+      }
+    }
+  }
+}
+
+.footer--copyright {
+  font-size: 1.4rem;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.5px;
+  padding-bottom: .5rem;
+}

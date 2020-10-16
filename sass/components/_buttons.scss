@@ -1,0 +1,63 @@
+%btn {
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 2rem;
+  text-align: center;
+  border-radius: 3px;
+  display: block;
+  width: 40rem;
+  color: currentColor;
+  border: 1px solid var(--color-secondary);
+  position: relative;
+  overflow-y: hidden;
+}
+
+.btn-primary {
+  &:link,
+  &:visited {
+    @extend %btn;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    width: 100%;
+    height: 180%;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.5s;
+  }
+
+  &:hover::before {
+    height: 0;
+  }
+}
+
+.btn-secondary {
+  &:link,
+  &:visited {
+    @extend %btn;
+    background-color: transparent;
+
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top:0;
+    left: 0;
+    height: 0;
+    width: 100%;
+    background-color: var(--color-secondary);
+    z-index: -1;
+    border-radius: 0 0 50% 50%;
+    transition: all 0.5s;
+  }
+
+  &:hover::before {
+    height: 180%;
+  }
+}

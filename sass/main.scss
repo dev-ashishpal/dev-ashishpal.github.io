@@ -1,0 +1,20 @@
+@import "abstract/variable";
+@import "abstract/mixin";
+
+@import "base/animation";
+@import "base/base";
+@import "base/typography";
+@import "base/utility";
+
+@import "components/buttons";
+@import "components/heading";
+@import "components/project-box";
+@import "components/service-box";
+@import "components/testimonial";
+
+@import "layout/navigation";
+@import "layout/header";
+@import "layout/footer";
+@import "layout/preloader";
+
+@import "pages/home";

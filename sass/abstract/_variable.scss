@@ -1,0 +1,50 @@
+//////////////////////////   COLORS   //////////////////////////
+
+//$color-primary: #003049;
+//$color-secondary: #c81d77;
+//$color-text: #eae2b7;
+
+//$color-primary: #D62828;
+//$color-secondary: #4C956C;
+//$color-text: #EAE2B7;
+
+//$color-primary: #2C6E49;
+//$color-secondary: #D68C45;
+//$color-text: #EAE2B7;
+
+//$color-primary: #F1F1F1;
+//$color-secondary: #D68C45;
+//$color-text: #003049;
+
+//:root {
+//  --color-primary: #003049;
+//  --color-secondary: #c81d77;
+//  --color-text: #eae2b7;
+//}
+
+.redMode {
+  --color-primary: #D62828;
+  --color-secondary: #4C956C;
+  --color-text: #EAE2B7;
+}
+
+.greenMode {
+  --color-primary: #2C6E49;
+  --color-secondary: #D68C45;
+  --color-text: #EAE2B7;
+}
+
+.whiteMode {
+  --color-primary: #F1F1F1;
+  --color-secondary: #D68C45;
+  --color-text: #003049;
+}
+
+.blueMode {
+  --color-primary: #003049;
+  --color-secondary: #c81d77;
+  --color-text: #eae2b7;
+}
+
+$font-main: "Open Sans", sans-serif;
+$font-heading: "Rancho", cursive;

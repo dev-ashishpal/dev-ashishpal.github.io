@@ -1,0 +1,61 @@
+.header {
+  height: 100vh;
+  display: flex;
+  //grid-template-columns: repeat(12, 1fr);
+  justify-content: center;
+
+  &-cta {
+    //background-color: orangered;
+    //grid-column: 4 / 10;
+    width: 100%;
+    align-self: center;
+
+    @include respond(tab-land) {
+      font-size: 60%;
+    }
+
+    //@media screen and (max-width: 1050px) {
+    //  grid-column: ;
+    //}
+
+    &__heading {
+
+      &--main {
+        font-family: $font-heading;
+        //color: $color-text;
+        font-size: 7rem;
+        font-weight: 400;
+        letter-spacing: 4px;
+        text-transform: uppercase;
+        text-align: center;
+      }
+
+      &--sub {
+        font-family: $font-main;
+        //color: $color-text;
+        font-size: 4rem;
+        font-weight: 300;
+        letter-spacing: 1px;
+        text-transform: lowercase;
+        text-align: center;
+        transform: translateY(-2rem);
+      }
+    }
+
+    &__btn {
+      display: flex;
+      padding-top: 3rem;
+      //grid-template-columns: repeat(2, 1fr);
+      grid-column-gap: 10rem;
+      //width: 50rem;
+      justify-content: center;
+      //width: 100%;
+
+      @media screen and (max-width: 450px) {
+        flex-direction: column;
+        align-items: center;
+        grid-row-gap: 3rem;
+      }
+    }
+  }
+}
