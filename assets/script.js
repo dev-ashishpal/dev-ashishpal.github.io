@@ -132,3 +132,20 @@ gsap.from(".stagger", {
   delay: 0.1,
   stagger: 0.5,
 });
+
+///////////////////// creating carousel /////////////////////
+const carouselContainer = document.querySelector('.testimonial--container');
+const carouselSlides = carouselContainer.querySelectorAll('article');
+const carouselPrev = document.querySelector('.testimonial--prev');
+const carouselNext = document.querySelector('.testimonial--next');
+
+// let carouselCounter = 1;
+// const carouselSize = carouselSlides[0].clientWidth;
+//
+// // carouselContainer.style.transform = `translateX(-${carouselSize * carouselCounter}px)`;
+//
+// carouselNext.addEventListener('click', () => {
+//   carouselContainer.style.transition= "transform 0.4s ease-in";
+//   carouselCounter++;
+//   carouselContainer.style.transform = `translateX(-${carouselSize * carouselCounter}px)`;
+// })

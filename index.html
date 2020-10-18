@@ -7,8 +7,10 @@
       content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <link rel="stylesheet" href="style.css" />
-    <script src="script.js" defer></script>
+<!--    <link rel="preload" href="style.css" as="style" />-->
+    <link rel="preload" href="assets/script.js" as="script" />
+
+    <link rel="stylesheet" href="assets/style.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rancho&display=swap"
       rel="stylesheet"
@@ -16,15 +18,15 @@
     <title>Ashish Pal</title>
   </head>
   <body>
-  <!---------------------------------  PRELOADER ANIMATION  --------------------------------->
-  <div class="preloader">
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-    <span></span>
-  </div>
+    <!---------------------------------  PRELOADER ANIMATION  --------------------------------->
+    <div class="preloader">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
     <!---------------------------------  NAVIGATION  --------------------------------->
     <div class="nav-icon">
@@ -34,7 +36,9 @@
       <div class="navigation--container">
         <ul class="navigation-list">
           <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link btn-secondary">portfolio</a>
+            <a href="#" class="navigation-list__link btn-secondary"
+              >portfolio</a
+            >
           </li>
           <li class="navigation-list__item">
             <a href="#" class="navigation-list__link btn-secondary">services</a>
@@ -44,7 +48,7 @@
           </li>
         </ul>
 
-        <div class="navigation-color__box ">
+        <div class="navigation-color__box">
           <p class="navigation-color__box--title">
             Pick your theme and it will be saved when you visit next.
           </p>
@@ -73,8 +77,8 @@
           <h1 class="header-cta__heading--main stagger">ashish pal</h1>
           <h3 class="header-cta__heading--sub stagger">full stack developer</h3>
           <div class="header-cta__btn stagger">
-            <a href="#" class="btn-primary">I'm looking to Hire</a>
-            <a href="#" class="btn-secondary">Download CV</a>
+            <a href="mailto:ashish79276@gmail.com" class="btn-primary" >I'm looking to Hire</a>
+            <a href="assets/files/ashish_resume.pdf" class="btn-secondary" download>Download CV</a>
           </div>
         </section>
       </header>
@@ -95,7 +99,7 @@
           </div>
           <figure class="section-about__img-box">
             <img
-              src="img/user1.jpg"
+              src="assets/img/user.jpg"
               alt="Ashish's Photo"
               class="section-about__img"
             />
@@ -113,11 +117,11 @@
           <article class="project--container__box">
             <img
               class="project--container__img"
-              src="img/webp/work-1.webp"
+              src="assets/img/webp/work-1.webp"
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">Web Design</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm">custom video player</h4>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
@@ -125,11 +129,13 @@
           <article class="project--container__box">
             <img
               class="project--container__img"
-              src="img/webp/work-2.webp"
+              src="assets/img/webp/work-2.webp"
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">Custom Video Player</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm">
+                travel booking
+              </h4>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
@@ -137,20 +143,22 @@
           <article class="project--container__box">
             <img
               class="project--container__img"
-              src="img/webp/work-3.webp"
+              src="assets/img/webp/work-3.webp"
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">Portfolio Website</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm">
+                lms
+              </h4>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
 
           <article class="project--container__box">
             <img
-                    class="project--container__img"
-                    src="img/webp/work-4.webp"
-                    alt="html_image"
+              class="project--container__img"
+              src="assets/img/webp/work-4.webp"
+              alt="html_image"
             />
             <div class="project--container__hover">
               <h4 class="header-cta__heading--sub mg-tp-sm">gym website</h4>
@@ -161,52 +169,28 @@
           <article class="project--container__box">
             <img
               class="project--container__img"
-              src="img/webp/work-5.webp"
+              src="assets/img/webp/work-5.webp"
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">LMS website</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm">portfolio website</h4>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
-
-
-
-<!--          <article class="project&#45;&#45;container__box">-->
-<!--            <img-->
-<!--              class="project&#45;&#45;container__img"-->
-<!--              src="img/work-6.png"-->
-<!--              alt="html_image"-->
-<!--            />-->
-<!--            <div class="project&#45;&#45;container__hover">-->
-<!--              <h4 class="header-cta__heading&#45;&#45;sub mg-tp-sm">E-Book Store</h4>-->
-<!--              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>-->
-<!--            </div>-->
-<!--          </article>-->
 
           <article class="project--container__box">
             <img
               class="project--container__img"
-              src="img/webp/work-6.webp"
+              src="assets/img/webp/work-6.webp"
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">travelling website</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm">
+                website design
+              </h4>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
-
-<!--          <article class="project&#45;&#45;container__box">-->
-<!--            <img-->
-<!--              class="project&#45;&#45;container__img"-->
-<!--              src="img/html%20css%20javascript.png"-->
-<!--              alt="html_image"-->
-<!--            />-->
-<!--            <div class="project&#45;&#45;container__hover">-->
-<!--              <h4 class="header-cta__heading&#45;&#45;sub mg-tp-sm">E-Book Store</h4>-->
-<!--              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>-->
-<!--            </div>-->
-<!--          </article>-->
         </main>
         <div class="project--container__btn mg-tp-lg">
           <a href="#" class="btn-primary">view all projects</a>
@@ -237,7 +221,7 @@
             <div class="service--container__box--content">
               <div class="service--container__icon">
                 <svg>
-                  <use xlink:href="img/sprite.svg#icon-design_services"></use>
+                  <use xlink:href="assets/img/sprite.svg#icon-design_services"></use>
                 </svg>
               </div>
               <h3
@@ -270,7 +254,7 @@
             <div class="service--container__box--content">
               <div class="service--container__icon">
                 <svg>
-                  <use xlink:href="img/sprite.svg#icon-flip_to_front"></use>
+                  <use xlink:href="assets/img/sprite.svg#icon-flip_to_front"></use>
                 </svg>
               </div>
               <h3
@@ -303,7 +287,7 @@
             <div class="service--container__box--content">
               <div class="service--container__icon">
                 <svg>
-                  <use xlink:href="img/sprite.svg#icon-important_devices"></use>
+                  <use xlink:href="assets/img/sprite.svg#icon-important_devices"></use>
                 </svg>
               </div>
               <h3
@@ -337,7 +321,7 @@
               <div class="service--container__icon">
                 <svg>
                   <use
-                    xlink:href="img/sprite.svg#icon-miscellaneous_services"
+                    xlink:href="assets/img/sprite.svg#icon-miscellaneous_services"
                   ></use>
                 </svg>
               </div>
@@ -361,26 +345,46 @@
           <span class="section-heading--text">Testimonial</span>
         </header>
 
-        <div class="testimonial--container mg-tp-lg">
+        <div class="testimonial mg-tp-hg">
           <span class="testimonial--prev testimonial--arrow">&lt;</span>
-          <div class="testimonial--container__box">
-            <p class="testimonial--container__para">
-              He created an amazing Learning Management System for my startup
-              with Node.js which is really amazing and have modern design and
-              great UI.
-            </p>
-            <div class="testimonial--container__client">
-              <figure class="testimonial--container__client--img">
-                <img src="img/user-4.jpg" alt="client_image" />
-              </figure>
-              <div class="testimonial--container__client--about">
-                <p class="testimonial--container__client--name">John Doe</p>
-                <span class="testimonial--container__client--company"
+        <div class="testimonial--container">
+          <div class="testimonial--container__slider">
+            <article class="testimonial--container__box" id="">
+              <p class="testimonial--container__para">
+                Ashish is a real Web Developer he converted my Figma design into HTML with full responsiveness and code was really clean and efficient.
+              </p>
+              <div class="testimonial--container__client">
+                <figure class="testimonial--container__client--img">
+                  <img src="assets/img/user-4.jpg" alt="client_image" />
+                </figure>
+                <div class="testimonial--container__client--about">
+                  <p class="testimonial--container__client--name">Motoki</p>
+                  <span class="testimonial--container__client--company"
                   >Ceo of LMS</span
-                >
+                  >
+                </div>
               </div>
-            </div>
+            </article>
+
+<!--            <article class="testimonial&#45;&#45;container__box" id="lastClone">-->
+<!--              <p class="testimonial&#45;&#45;container__para">-->
+<!--                Someone is a real Web Developer he converted my Figma design into HTML with full responsiveness and code was really clean and efficient.-->
+<!--              </p>-->
+<!--              <div class="testimonial&#45;&#45;container__client">-->
+<!--                <figure class="testimonial&#45;&#45;container__client&#45;&#45;img">-->
+<!--                  <img src="assets/img/user-4.jpg" alt="client_image" />-->
+<!--                </figure>-->
+<!--                <div class="testimonial&#45;&#45;container__client&#45;&#45;about">-->
+<!--                  <p class="testimonial&#45;&#45;container__client&#45;&#45;name">Motoki</p>-->
+<!--                  <span class="testimonial&#45;&#45;container__client&#45;&#45;company"-->
+<!--                  >Ceo of LMS</span-->
+<!--                  >-->
+<!--                </div>-->
+<!--              </div>-->
+<!--            </article>-->
           </div>
+        </div>
+
           <span class="testimonial--next testimonial--arrow">&gt;</span>
         </div>
         <div class="testimonial--footer">
@@ -391,24 +395,50 @@
       <!---------------------------------  BLOG SECTION  --------------------------------->
     </main>
     <footer class="footer">
-        <ul class="footer--list">
-          <li class="footer--list__item"><a href="#" class="footer--list__link">
+      <ul class="footer--list">
+        <li class="footer--list__item">
+          <a href="https://www.linkedin.com/in/ashish-pal-7b87101a3/" target="_blank" class="footer--list__link">
             <svg>
-              <use xlink:href="img/sprite.svg#icon-linkedin2"></use>
+              <use xlink:href="assets/img/sprite.svg#icon-linkedin2"></use>
             </svg>
-          </a></li>
-          <li class="footer--list__item"><a href="#" class="footer--list__link">
+          </a>
+        </li>
+        <li class="footer--list__item">
+          <a href="https://github.com/dev-ashishpal" target="_blank" class="footer--list__link">
             <svg>
-              <use xlink:href="img/sprite.svg#icon-github"></use>
+              <use xlink:href="assets/img/sprite.svg#icon-github"></use>
             </svg>
-          </a></li>
-        </ul>
-      <small class="footer--copyright">Developed by Ashish Pal. Copyright &copy; 2020</small>
+          </a>
+        </li>
+      </ul>
+      <small class="footer--copyright"
+        >Developed by Ashish Pal. Copyright &copy; 2020</small
+      >
     </footer>
 
-<!--    <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>-->
+<!--        <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/SplitText3.min.js"></script>-->
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-  <script src="script.js"></script>
+    <script src="assets/script.js"></script>
   </body>
 </html>
+
+
+
+
+<!--<article class="testimonial&#45;&#45;container__box" id="lastClone">-->
+<!--  <p class="testimonial&#45;&#45;container__para">-->
+<!--    Ashish is a real Web Developer he converted my Figma design into HTML with full responsiveness and code was really clean and efficient.-->
+<!--  </p>-->
+<!--  <div class="testimonial&#45;&#45;container__client">-->
+<!--    <figure class="testimonial&#45;&#45;container__client&#45;&#45;img">-->
+<!--      <img src="assets/img/user-4.jpg" alt="client_image" />-->
+<!--    </figure>-->
+<!--    <div class="testimonial&#45;&#45;container__client&#45;&#45;about">-->
+<!--      <p class="testimonial&#45;&#45;container__client&#45;&#45;name">Motoki</p>-->
+<!--      <span class="testimonial&#45;&#45;container__client&#45;&#45;company"-->
+<!--      >Ceo of LMS</span-->
+<!--      >-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</article>-->
