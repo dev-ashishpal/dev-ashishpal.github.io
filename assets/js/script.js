@@ -1,3 +1,6 @@
+const navLinks = document.querySelectorAll('.navigation-list__link');
+
+
 window.addEventListener("load", () => {
   const loader = document.querySelector(".preloader");
   loader.classList.add("preloader__finish");
@@ -90,6 +93,11 @@ blueBtn.addEventListener("click", () => {
 const nav = document.querySelector(".nav-icon");
 const navBtn = document.querySelector(".nav-icon--1");
 
+const closeNav = () => {
+  gsap.to(".navigation", { x: "100%", duration: 0.6 });
+  gsap.to(".navigation--slider", { x: "100%", duration: 0.6, delay: 0.2 });
+}
+
 const navAnimation = () => {
   navBtn.classList.toggle("active");
 
@@ -116,10 +124,15 @@ const navAnimation = () => {
       x: "300px",
     });
   } else {
-    gsap.to(".navigation", { x: "100%", duration: 0.6 });
-    gsap.to(".navigation--slider", { x: "100%", duration: 0.6, delay: 0.2 });
+    closeNav();
   }
 };
+
+navLinks.forEach(navLink => {
+  navLink.addEventListener('click', () => {
+    closeNav();
+  });
+});
 
 nav.addEventListener("click", navAnimation);
 

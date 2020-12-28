@@ -61,6 +61,22 @@ body {
       width: 95%;
       margin: 0 auto; } }
 
+.single-container {
+  width: 60%;
+  margin: 0 auto; }
+  @media screen and (min-width: 1400px) {
+    .single-container {
+      width: 90rem;
+      margin: 0 auto; } }
+  @media screen and (max-width: 900px) {
+    .single-container {
+      width: 70%;
+      margin: 0 auto; } }
+  @media screen and (max-width: 600px) {
+    .single-container {
+      width: 85%;
+      margin: 0 auto; } }
+
 .mg-tp-sm {
   margin-top: 2rem; }
 
@@ -114,6 +130,9 @@ body {
 
 .text-center {
   text-align: center; }
+
+.header-cta__heading--sub.capitalized {
+  text-transform: capitalize; }
 
 .btn-primary:link, .btn-primary:visited, .btn-secondary:link, .btn-secondary:visited {
   padding: 1rem 2rem;
@@ -190,7 +209,8 @@ body {
     height: 27rem;
     overflow: hidden;
     border-radius: 3px;
-    width: 100%; }
+    width: 100%;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3); }
   .project--container__img {
     height: 100%;
     width: 100%;
@@ -207,6 +227,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; }
+    .project--container__hover-tags {
+      display: flex;
+      justify-content: space-around;
+      margin-top: -3rem; }
+      .project--container__hover-tags p {
+        background-color: rgba(255, 255, 255, 0.1);
+        padding: .5rem 1.5rem;
+        font-family: inherit;
+        letter-spacing: 0.5px;
+        text-transform: uppercase;
+        border: 2px solid transparent;
+        background-clip: padding-box;
+        box-shadow: -1px 2px 8px -1px rgba(0, 0, 0, 0.35); }
   .project--container__box:hover .project--container__hover {
     z-index: 10; }
   .project--container__btn {
@@ -235,6 +268,7 @@ body {
     background-color: var(--color-text);
     overflow: hidden;
     border-radius: 3px;
+    box-shadow: 0 1rem 1rem rgba(0, 0, 0, 0.3);
     position: relative; }
     @media screen and (max-width: 400px) {
       .service--container__box {
@@ -656,3 +690,10 @@ body {
       height: 100%;
       width: 100%;
       transition: all 0.4s; }
+
+.portfolio--large__img {
+  background-color: pink;
+  height: 100%; }
+  .portfolio--large__img img {
+    width: 100%;
+    height: auto; }

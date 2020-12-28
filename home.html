@@ -8,9 +8,9 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <!--    <link rel="preload" href="style.css" as="style" />-->
-    <link rel="preload" href="assets/script.min.js" as="script" />
+    <link rel="preload" href="assets/js/script.js" as="script" />
 
-    <link rel="stylesheet" href="assets/style.min.css" />
+    <link rel="stylesheet" href="assets/style.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rancho&display=swap"
       rel="stylesheet"
@@ -36,15 +36,15 @@
       <div class="navigation--container">
         <ul class="navigation-list">
           <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link btn-secondary"
-              >portfolio</a
+            <a href="#about" class="navigation-list__link btn-secondary"
+              >about</a
             >
           </li>
           <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link btn-secondary">services</a>
+            <a href="#portfolio" class="navigation-list__link btn-secondary">portfolio</a>
           </li>
           <li class="navigation-list__item">
-            <a href="#" class="navigation-list__link btn-secondary">blog</a>
+            <a href="#service" class="navigation-list__link btn-secondary">services</a>
           </li>
         </ul>
 
@@ -91,7 +91,7 @@
       </header>
 
       <!---------------------------------  ABOUT SECTION  --------------------------------->
-      <section class="section-about">
+      <section id="about" class="section-about">
         <header class="section-heading text-center">
           <span class="section-heading--text">about</span>
         </header>
@@ -115,7 +115,7 @@
       </section>
 
       <!---------------------------------  PROJECT'S SECTION  --------------------------------->
-      <section class="section-project mg-tp-section">
+      <section id="portfolio" class="section-project mg-tp-section">
         <header class="section-heading text-center">
           <span class="section-heading--text">projects</span>
         </header>
@@ -128,10 +128,14 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">
                 custom video player
               </h4>
-              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
+              <div class="project--container__hover-tags">
+                <p>HTML</p>
+                <p>JavaScript</p>
+              </div>
+              <a href="custom_video_player.html" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
 
@@ -142,8 +146,12 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">travel booking</h4>
-              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">travel booking</h4>
+              <div class="project--container__hover-tags">
+                <p>HTML</p>
+                <p>css</p>
+              </div>
+              <a href="travel_website.html" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
 
@@ -154,8 +162,13 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">lms</h4>
-              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">lms</h4>
+              <div class="project--container__hover-tags">
+                <p>node.js</p>
+                <p>mongodb</p>
+                <p>socket.io</p>
+              </div>
+              <a href="lms.html" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
 
@@ -166,8 +179,12 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">gym website</h4>
-              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">gym website</h4>
+              <div class="project--container__hover-tags">
+                <p>HTML</p>
+                <p>sass</p>
+              </div>
+              <a href="gym_website.html" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
 
@@ -178,9 +195,14 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">
                 portfolio website
               </h4>
+              <div class="project--container__hover-tags">
+                <p>HTML</p>
+                <p>sass</p>
+                <p>JavaScript</p>
+              </div>
               <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
@@ -192,24 +214,28 @@
               alt="html_image"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm">website design</h4>
-              <a href="#" class="btn-primary mg-tp-lg">Learn More</a>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">website design</h4>
+              <div class="project--container__hover-tags">
+                <p>web design</p>
+                <p>figma</p>
+              </div>
+              <a href="website_design.html" class="btn-primary mg-tp-lg">Learn More</a>
             </div>
           </article>
         </main>
-        <div class="project--container__btn mg-tp-lg">
-          <a href="#" class="btn-primary">view all projects</a>
-        </div>
+<!--        <div class="project&#45;&#45;container__btn mg-tp-lg">-->
+<!--          <a href="#" class="btn-primary">view all projects</a>-->
+<!--        </div>-->
       </section>
 
       <!---------------------------------  SERVICE'S SECTION  --------------------------------->
-      <section class="section-service mg-tp-section">
+      <section id="service" class="section-service mg-tp-section">
         <header class="section-heading text-center">
           <span class="section-heading--text">services</span>
         </header>
 
         <div class="service--container mg-tp-md">
-          <div class="service--container__box">
+          <article class="service--container__box">
             <div class="circle-box1"></div>
             <svg
               class="box1-svg"
@@ -242,9 +268,9 @@
                 FIGMA
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="service--container__box">
+          <article class="service--container__box">
             <div class="circle-box1"></div>
             <svg
               class="box1-svg"
@@ -277,9 +303,9 @@
                 experience than WORDPRESS.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="service--container__box">
+          <article class="service--container__box">
             <div class="circle-box1"></div>
             <svg
               class="box1-svg"
@@ -312,9 +338,9 @@
                 Websites.
               </p>
             </div>
-          </div>
+          </article>
 
-          <div class="service--container__box">
+          <article class="service--container__box">
             <div class="circle-box1"></div>
             <svg
               class="box1-svg"
@@ -346,46 +372,44 @@
                 React.js with great functionality.
               </p>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 
       <!---------------------------------  TESTIMONIAL SECTION  --------------------------------->
-      <section class="section-testimonial mg-tp-section">
-        <header class="section-heading text-center">
-          <span class="section-heading--text">Testimonial</span>
-        </header>
+<!--      <section class="section-testimonial mg-tp-section">-->
+<!--        <header class="section-heading text-center">-->
+<!--          <span class="section-heading&#45;&#45;text">Testimonial</span>-->
+<!--        </header>-->
 
-        <div class="testimonial--container mg-tp-hg">
-          <span class="testimonial--prev testimonial--arrow">&lt;</span>
-          <article class="testimonial--container__box" id="">
-            <p class="testimonial--container__para">
-              Ashish is a real Web Developer he converted my Figma design into
-              HTML with full responsiveness and code was really clean and
-              efficient.
-            </p>
-            <div class="testimonial--container__client">
-              <figure class="testimonial--container__client--img">
-                <img src="assets/img/webp/client.webp" alt="client_image" />
-              </figure>
-              <div class="testimonial--container__client--about">
-                <p class="testimonial--container__client--name">Motoki</p>
-                <span class="testimonial--container__client--company"
-                  >Ceo of LMS</span
-                >
-              </div>
-            </div>
-          </article>
-          <span class="testimonial--next testimonial--arrow">&gt;</span>
-        </div>
+<!--        <div class="testimonial&#45;&#45;container mg-tp-hg">-->
+<!--          <span class="testimonial&#45;&#45;prev testimonial&#45;&#45;arrow">&lt;</span>-->
+<!--          <article class="testimonial&#45;&#45;container__box" id="">-->
+<!--            <p class="testimonial&#45;&#45;container__para">-->
+<!--              Ashish is a real Web Developer he converted my Figma design into-->
+<!--              HTML with full responsiveness and code was really clean and-->
+<!--              efficient.-->
+<!--            </p>-->
+<!--            <div class="testimonial&#45;&#45;container__client">-->
+<!--              <figure class="testimonial&#45;&#45;container__client&#45;&#45;img">-->
+<!--                <img src="assets/img/webp/client.webp" alt="client_image" />-->
+<!--              </figure>-->
+<!--              <div class="testimonial&#45;&#45;container__client&#45;&#45;about">-->
+<!--                <p class="testimonial&#45;&#45;container__client&#45;&#45;name">Motoki</p>-->
+<!--                <span class="testimonial&#45;&#45;container__client&#45;&#45;company"-->
+<!--                  >Ceo of LMS</span-->
+<!--                >-->
+<!--              </div>-->
+<!--            </div>-->
+<!--          </article>-->
+<!--          <span class="testimonial&#45;&#45;next testimonial&#45;&#45;arrow">&gt;</span>-->
+<!--        </div>-->
 
-        <!--        </div>-->
-        <div class="testimonial--footer">
-          <div class="testimonial--footer__line"></div>
-        </div>
-      </section>
-
-      <!---------------------------------  BLOG SECTION  --------------------------------->
+<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
+<!--        <div class="testimonial&#45;&#45;footer">-->
+<!--          <div class="testimonial&#45;&#45;footer__line"></div>-->
+<!--        </div>-->
+<!--      </section>-->
     </main>
     <footer class="footer">
       <ul class="footer--list">
@@ -419,6 +443,6 @@
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
-    <script src="assets/script.min.js"></script>
+    <script src="assets/js/script.js"></script>
   </body>
 </html>
