@@ -4,6 +4,9 @@
   grid-template-columns: repeat(auto-fit, 40rem);
   grid-gap: 1.5rem;
   justify-content: center;
+  height: 100vh;
+  width: 100vw;
+
   //padding-top: 10rem;
   //
   //@include respond(tab-port) {

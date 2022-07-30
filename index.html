@@ -11,6 +11,19 @@
     <link rel="preload" href="assets/js/script.js" as="script" />
 
     <link rel="stylesheet" href="assets/style.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rancho&display=swap"
+      rel="preload"
+      as="style"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rancho&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'"
+    />
     <link
       href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&family=Rancho&display=swap"
       rel="stylesheet"
@@ -18,6 +31,9 @@
     <title>Ashish Pal</title>
   </head>
   <body>
+    <div class="cursor">
+      <div class="cursor--inner"></div>
+    </div>
     <!---------------------------------  PRELOADER ANIMATION  --------------------------------->
     <div class="preloader">
       <span></span>
@@ -32,6 +48,7 @@
     <div class="nav-icon">
       <span class="nav-icon--1"></span>
     </div>
+
     <nav class="navigation">
       <div class="navigation--container">
         <ul class="navigation-list">
@@ -41,10 +58,14 @@
             >
           </li>
           <li class="navigation-list__item">
-            <a href="#portfolio" class="navigation-list__link btn-secondary">portfolio</a>
+            <a href="#portfolio" class="navigation-list__link btn-secondary"
+              >portfolio</a
+            >
           </li>
           <li class="navigation-list__item">
-            <a href="#service" class="navigation-list__link btn-secondary">services</a>
+            <a href="#service" class="navigation-list__link btn-secondary"
+              >services</a
+            >
           </li>
         </ul>
 
@@ -72,23 +93,20 @@
     <!---------------------------------  MAIN CONTAINER  --------------------------------->
     <main class="container mg-bt-lg">
       <!---------------------------------  HEADER  --------------------------------->
-      <header class="header">
-        <section class="header-cta">
+      <section class="header">
+        <div class="header-cta">
           <h1 class="header-cta__heading--main stagger">ashish pal</h1>
-          <h3 class="header-cta__heading--sub stagger">full stack developer</h3>
+          <h3 class="header-cta__heading--sub stagger">software developer</h3>
           <div class="header-cta__btn stagger">
             <a href="mailto:ashish79276@gmail.com" class="btn-primary"
               >I'm looking to Hire</a
             >
-            <a
-              href="assets/files/ashish_resume.pdf"
-              class="btn-secondary"
-              download
+            <a href="assets/files/new_resume.pdf" class="btn-secondary" download
               >Download CV</a
             >
           </div>
-        </section>
-      </header>
+        </div>
+      </section>
 
       <!---------------------------------  ABOUT SECTION  --------------------------------->
       <section id="about" class="section-about">
@@ -106,7 +124,7 @@
           </div>
           <figure class="section-about__img-box">
             <img
-                    loading="lazy"
+              loading="lazy"
               src="assets/img/webp/user-1.webp"
               alt="Ashish's Photo"
               class="section-about__img"
@@ -117,12 +135,12 @@
       </section>
 
       <!--------------------------------  PROJECT'S SECTION  -------------------------------->
-      <section id="portfolio" class="section-project mg-tp-section">
+      <section id="portfolio" class="section-project mg-tp-md">
         <header class="section-heading text-center">
           <span class="section-heading--text">projects</span>
         </header>
 
-        <main class="project--container mg-tp-hg">
+        <main class="project--container mg-tp-md">
           <article class="project--container__box">
             <img
               class="project--container__img"
@@ -139,7 +157,9 @@
                 <p>HTML</p>
                 <p>JavaScript</p>
               </div>
-              <a href="custom_video_player.html" class="btn-primary mg-tp-lg">Learn More</a>
+              <a href="custom_video_player.html" class="btn-primary mg-tp-lg"
+                >Learn More</a
+              >
             </div>
           </article>
 
@@ -152,12 +172,16 @@
               decoding="async"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">travel booking</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">
+                travel booking
+              </h4>
               <div class="project--container__hover-tags">
                 <p>HTML</p>
                 <p>css</p>
               </div>
-              <a href="travel_website.html" class="btn-primary mg-tp-lg">Learn More</a>
+              <a href="travel_website.html" class="btn-primary mg-tp-lg"
+                >Learn More</a
+              >
             </div>
           </article>
 
@@ -189,12 +213,16 @@
               decoding="async"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">gym website</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">
+                gym website
+              </h4>
               <div class="project--container__hover-tags">
                 <p>HTML</p>
                 <p>sass</p>
               </div>
-              <a href="gym_website.html" class="btn-primary mg-tp-lg">Learn More</a>
+              <a href="gym_website.html" class="btn-primary mg-tp-lg"
+                >Learn More</a
+              >
             </div>
           </article>
 
@@ -228,27 +256,31 @@
               decoding="async"
             />
             <div class="project--container__hover">
-              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">website design</h4>
+              <h4 class="header-cta__heading--sub mg-tp-sm capitalized">
+                website design
+              </h4>
               <div class="project--container__hover-tags">
                 <p>web design</p>
                 <p>figma</p>
               </div>
-              <a href="website_design.html" class="btn-primary mg-tp-lg">Learn More</a>
+              <a href="website_design.html" class="btn-primary mg-tp-lg"
+                >Learn More</a
+              >
             </div>
           </article>
         </main>
-<!--        <div class="project&#45;&#45;container__btn mg-tp-lg">-->
-<!--          <a href="#" class="btn-primary">view all projects</a>-->
-<!--        </div>-->
+        <!--        <div class="project&#45;&#45;container__btn mg-tp-lg">-->
+        <!--          <a href="#" class="btn-primary">view all projects</a>-->
+        <!--        </div>-->
       </section>
 
       <!---------------------------------  SERVICE'S SECTION  --------------------------------->
-      <section id="service" class="section-service mg-tp-section">
+      <section id="service" class="section-service mg-tp-md">
         <header class="section-heading text-center">
           <span class="section-heading--text">services</span>
         </header>
 
-        <div class="service--container mg-tp-md">
+        <div class="service--container mg-tp-sm">
           <article class="service--container__box">
             <div class="circle-box1"></div>
             <svg
@@ -309,12 +341,11 @@
               <h3
                 class="heading--tertiary service--container__heading mg-tp-sm mg-bt-sm"
               >
-                Webflow Development
+                Blockchain Development
               </h3>
               <p class="service--container__text">
-                A great tool to create website without coding and WEBFLOW
-                website is very easy and efficient to manage, even better
-                experience than WORDPRESS.
+                Decentralization and Web3.0 is taking over the internet. With
+                the help of Ethereum I can help you build an DApp.
               </p>
             </div>
           </article>
@@ -389,43 +420,8 @@
           </article>
         </div>
       </section>
-
-      <!---------------------------------  TESTIMONIAL SECTION  --------------------------------->
-<!--      <section class="section-testimonial mg-tp-section">-->
-<!--        <header class="section-heading text-center">-->
-<!--          <span class="section-heading&#45;&#45;text">Testimonial</span>-->
-<!--        </header>-->
-
-<!--        <div class="testimonial&#45;&#45;container mg-tp-hg">-->
-<!--          <span class="testimonial&#45;&#45;prev testimonial&#45;&#45;arrow">&lt;</span>-->
-<!--          <article class="testimonial&#45;&#45;container__box" id="">-->
-<!--            <p class="testimonial&#45;&#45;container__para">-->
-<!--              Ashish is a real Web Developer he converted my Figma design into-->
-<!--              HTML with full responsiveness and code was really clean and-->
-<!--              efficient.-->
-<!--            </p>-->
-<!--            <div class="testimonial&#45;&#45;container__client">-->
-<!--              <figure class="testimonial&#45;&#45;container__client&#45;&#45;img">-->
-<!--                <img src="assets/img/webp/client.webp" alt="client_image" />-->
-<!--              </figure>-->
-<!--              <div class="testimonial&#45;&#45;container__client&#45;&#45;about">-->
-<!--                <p class="testimonial&#45;&#45;container__client&#45;&#45;name">Motoki</p>-->
-<!--                <span class="testimonial&#45;&#45;container__client&#45;&#45;company"-->
-<!--                  >Ceo of LMS</span-->
-<!--                >-->
-<!--              </div>-->
-<!--            </div>-->
-<!--          </article>-->
-<!--          <span class="testimonial&#45;&#45;next testimonial&#45;&#45;arrow">&gt;</span>-->
-<!--        </div>-->
-
-<!--        &lt;!&ndash;        </div>&ndash;&gt;-->
-<!--        <div class="testimonial&#45;&#45;footer">-->
-<!--          <div class="testimonial&#45;&#45;footer__line"></div>-->
-<!--        </div>-->
-<!--      </section>-->
     </main>
-    <footer class="footer">
+    <!-- <footer class="footer">
       <ul class="footer--list">
         <li class="footer--list__item">
           <a
@@ -453,7 +449,7 @@
       <small class="footer--copyright"
         >Developed by Ashish Pal. Copyright &copy; 2020</small
       >
-    </footer>
+    </footer> -->
 
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/ScrollTrigger.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>

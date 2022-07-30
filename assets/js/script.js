@@ -1,9 +1,36 @@
-const navLinks = document.querySelectorAll('.navigation-list__link');
-
+const navLinks = document.querySelectorAll(".navigation-list__link");
+let mouseCursor = document.querySelector(".cursor");
 
 window.addEventListener("load", () => {
   const loader = document.querySelector(".preloader");
   loader.classList.add("preloader__finish");
+});
+
+const cursor = (e) => {
+  mouseCursor.style.top = e.pageY + "px";
+  mouseCursor.style.left = e.pageX + "px";
+};
+
+window.addEventListener("mousemove", cursor);
+
+const allLinks = Array.from(document.getElementsByTagName("a"));
+const allBtn = Array.from(document.getElementsByTagName("button"));
+
+allLinks.forEach((link) => {
+  link.addEventListener("mouseover", () => {
+    mouseCursor.classList.add("link-grow");
+  });
+  link.addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("link-grow");
+  });
+});
+allBtn.forEach((btn) => {
+  btn.addEventListener("mouseover", () => {
+    mouseCursor.classList.add("link-grow");
+  });
+  btn.addEventListener("mouseleave", () => {
+    mouseCursor.classList.remove("link-grow");
+  });
 });
 
 let colorMode = localStorage.getItem("colorMode");
@@ -52,21 +79,16 @@ const enableBlueMode = () => {
 };
 
 ////////////////////// listening to the events  /////////////////////
-
 enableBlueMode();
-
 if (colorMode === "blue") {
   enableBlueMode();
 }
-
 if (colorMode === "red") {
   enableRedMode();
 }
-
 if (colorMode === "white") {
   enableWhiteMode();
 }
-
 if (colorMode === "green") {
   enableGreenMode();
 }
@@ -96,7 +118,8 @@ const navBtn = document.querySelector(".nav-icon--1");
 const closeNav = () => {
   gsap.to(".navigation", { x: "100%", duration: 0.6 });
   gsap.to(".navigation--slider", { x: "100%", duration: 0.6, delay: 0.2 });
-}
+  // navBtn.classList.remove("active");
+};
 
 const navAnimation = () => {
   navBtn.classList.toggle("active");
@@ -128,8 +151,8 @@ const navAnimation = () => {
   }
 };
 
-navLinks.forEach(navLink => {
-  navLink.addEventListener('click', () => {
+navLinks.forEach((navLink) => {
+  navLink.addEventListener("click", () => {
     closeNav();
   });
 });
